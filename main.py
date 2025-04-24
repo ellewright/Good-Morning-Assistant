@@ -18,7 +18,7 @@ def get_random_pokemon_data():
     else:
         print("There was an error loading Pokemon data.")
 
-def main():
+def get_trivia_data():
     current = str(datetime.date.today())
     current_month = current[5:7]
     current_day = current[8:]
@@ -34,6 +34,8 @@ def main():
     else:
         print("There was an error. Please try again.")
 
+def main():
+    get_trivia_data()
     get_random_pokemon_data()
 
 main()
